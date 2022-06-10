@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House Jobs</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="javajam.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>JavaJam Coffee House</h1>
+</header>
+<nav>
+  <ul> 
+    <li><a href="jobs.html">Jobs</a></li>
+  </ul>
+</nav>
+<main>
+<div id="herojobs"></div>
+<h2>Jobs at JavaJam</h2>
+<p>Click the button to display a dialog box which will ask for your favorite drink.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var favDrink = prompt("What's your favorite cocktail drink?", "Daiquiri");
+  switch(favDrink) {
+    case "Martini":
+      text = "Excellent choice. Martini is good for your soul.";
+      break;
+    case "Daiquiri":
+      text = "Daiquiri is my favorite too!";
+      break;
+    case "Cosmopolitan":
+      text = "Really? Are you sure the Cosmopolitan is your favorite?";
+      break;
+    default:
+      text = "I have never heard of that one..";
+  }
+  document.getElementById("demo").innerHTML = text;
+</main>
+<footer>
+Copyright &copy; 2018 JavaJam Coffee House<br>
+<a href="mailto:Francis@Boafo.com">Francis@Boafo.com</a>
+</footer>
+</div>
+</body>
+</html>
